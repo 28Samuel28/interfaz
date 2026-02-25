@@ -1,13 +1,60 @@
-# ARM y la evolución del hardware móvil
+
 ![Logo TECNM ITT](https://www.tijuana.tecnm.mx//wp-content/uploads/2022/11/Banderin-TECNM-ITT-2022-ver-Final-scaled-e1668192523487-1568x948.jpg)
 
+---
+
 ## Información Académica
-- **Alumno:** Howard Rodriguez Gallardo
-- **Número de Control:** 23212062
-- **Asignatura:** Lenguajes de Interfaz
-- **Horario:** 4:00 PM
-- **Docente:** RENE SOLIS REYES
-- **Fecha de Entrega:** 24 de febrero de 2026
+
+- **Alumno:** Howard Rodriguez Gallardo  
+- **Número de Control:** 23212062  
+- **Asignatura:** Lenguajes de Interfaz  
+- **Horario:** 4:00 PM  
+- **Docente:** RENE SOLIS REYES  
+- **Fecha de Entrega:** 24 de febrero de 2026  
+
+---
+
+## Introducción
+
+La evolución del hardware móvil ha sido uno de los procesos tecnológicos más acelerados de las últimas décadas. Desde los primeros teléfonos celulares con funciones básicas hasta los actuales smartphones capaces de ejecutar videojuegos complejos, inteligencia artificial y multitarea avanzada, el crecimiento ha sido exponencial.
+
+En este contexto, la arquitectura ARM ha desempeñado un papel central. Su diseño basado en eficiencia energética y simplicidad estructural permitió que los dispositivos móviles lograran un equilibrio entre rendimiento y consumo de batería.
+
+El presente trabajo analiza cómo ARM se convirtió en el estándar del hardware móvil, cuáles fueron sus principales avances tecnológicos y cómo influyó en la evolución de los dispositivos portátiles.
+
+---
+
+## Desarrollo
+
+### 1. Origen de ARM y su enfoque en eficiencia
+
+ARM surgió como una alternativa a las arquitecturas tradicionales enfocadas en alto rendimiento pero alto consumo energético. Basada en el modelo RISC, ARM prioriza instrucciones simples que requieren menos ciclos de ejecución y menor consumo eléctrico.
+
+Esto permitió que los procesadores ARM fueran ideales para dispositivos portátiles donde la duración de batería es fundamental.
+
+---
+
+### 2. Funcionamiento general de la arquitectura ARM
+
+```mermaid
+flowchart TD
+A[Aplicaciones móviles] --> B[CPU ARM]
+B --> C[Pipeline eficiente]
+B --> D[Control dinámico de energía]
+B --> E[Modo bajo consumo]
+
+C --> F[Procesamiento rápido]
+D --> G[Ajuste de voltaje y frecuencia]
+E --> H[Ahorro energético]
+
+F --> I[Eficiencia energética]
+G --> I
+H --> I
+
+I --> J[Mayor duración de batería]
+```
+
+---
 
 
 ## Introducción
@@ -40,6 +87,17 @@ El concepto de **SoC (System on Chip)** fue clave en la evolución del hardware 
 El lanzamiento del **iPhone en 2007** marcó un punto de inflexión. A partir de ese momento, los smartphones comenzaron a demandar mayor capacidad gráfica, mejor rendimiento multitarea y soporte para aplicaciones más complejas. ARM permitió escalar el rendimiento sin sacrificar autonomía.
 
 
+---
+```mermaid
+flowchart LR
+CPU[CPU ARM] --> BUS[Bus interno]
+GPU[GPU] --> BUS
+NPU[NPU IA] --> BUS
+MEM[Controlador memoria] --> BUS
+SEC[Seguridad] --> BUS
+
+BUS --> IO[Entradas y salidas]
+```
 ---
 
 ### 3. Evolución hacia arquitecturas de 64 bits
